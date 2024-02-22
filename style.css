@@ -1,0 +1,238 @@
+head, body, footer{
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #B6ECDB;
+}
+.logo {
+    width: 15%;
+    height: auto;
+    max-width: 120px;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+.rectangle {
+    width: 40%;
+    max-width: 400px;
+    height: 90%;
+    position: absolute;
+    top: 2.5em;
+    left: 80%;
+    overflow: auto;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 10px 10px 30px 15px #53BF9E;
+}
+.rectangle-image {
+    width: 50%;
+    height: auto;
+    max-width: 236px;
+    position: absolute;
+    bottom: 23em;
+    right: 7em;
+    display: block;
+}
+.text-area {
+    width: 20%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    border: none;
+    background-color: #B6ECDB;
+    resize: none; /*Para evitar que el usuario pueda redimensionar el textarea*/
+    overflow: hidden; /*Para ocultar la barra de desplazamiento*/
+}
+.no-mensaje {
+    font-size: 1.3em;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    top: 17em;
+    word-wrap: break-word; /*Para que las palabras se rompan automáticamente*/
+    max-width: 90%;
+    max-height: 20%
+}
+.ingresar-texto {
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    top: 25em;
+}
+.letras-pequeñas {
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    bottom: 15%;
+    left: 6%;
+    color: gray;
+}
+.botones {
+    display: flex;
+    justify-content: left; 
+    position: absolute;
+    bottom: 5%;
+    left: 5em;
+    width: 90%;
+    gap: 10px;
+}
+.encriptarbtn, .desencriptarbtn {
+    width: 40%; 
+    max-width: 328px;
+    padding: 1em;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+.encriptarbtn{
+    background: #45A084;
+    color: white;
+}
+.desencriptarbtn{
+    background: linear-gradient(0deg, #53BF9E, #53BF9E), linear-gradient(0deg, #D8DFE8, #D8DFE8);
+    background: #D8DFE8;
+    border-color: #53BF9E;
+}
+#btnCopiar{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 100%;
+    right: 6em;
+    width: 20%;
+    height: 80%;
+    padding: 0.6em;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    background: linear-gradient(0deg, #53BF9E, #53BF9E), linear-gradient(0deg, #D8DFE8, #D8DFE8);
+    background: #D8DFE8;
+    border-color: #53BF9E;
+    cursor: pointer;
+}
+
+/*Media query para tabletas*/
+@media (max-width: 768px) {
+    .logo{
+        width: 50%;
+        height: auto;
+    }
+    .rectangle{
+        position: absolute;
+        top: 95%;
+        width: 90%;
+        max-width: none;
+        height: 20%;
+        left: 50%;
+
+    }
+    .rectangle-image{
+        display: none;
+    }
+    .text-area{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        font-size: 1.5em;
+    }
+    .no-mensaje{
+        position: absolute;
+        top: 1%;
+        font-size: 120%;
+    }
+    .ingresar-texto{
+        position: absolute;
+        top: 45%;
+        font-size: 90%;
+    }
+    .botones {
+        gap: 0.5em;
+        align-items: center;
+        position: absolute;
+        left: 7%;
+    }
+    .letras-pequeñas{
+        position: absolute;
+        top: 85%;
+        font-size: 50%;
+        left: 10%;
+        color: gray;
+    }
+    .encriptarbtn, .desencriptarbtn {
+        width: 100%; 
+    }
+    #btnCopiar{
+        position: absolute;
+        top: 570%;
+        left: 2%;
+        width: 90%;
+    }
+}
+
+/*Media query para móviles*/
+@media (max-width: 480px) {
+    .logo{
+        width: 30%;
+        height: auto;
+        position: absolute;
+        left: 1%;
+    }
+    .rectangle{
+        position: absolute;
+        top: 95%;
+        height: 20%;
+        left: 50%;
+
+    }
+    .text-area{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        font-size: 100%;
+    }
+    .no-mensaje{
+        position: absolute;
+        top: 1%;
+        font-size: 120%;
+    }
+    .ingresar-texto{
+        position: absolute;
+        top: 45%;
+        font-size: 90%;
+    }
+    .botones {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+        position: absolute;
+        left: 5%;
+    }
+    .letras-pequeñas{
+        position: absolute;
+        top: 72%;
+        font-size: 50%;
+        left: 10%;
+    }
+    .encriptarbtn, .desencriptarbtn {
+        width: 100%;
+    }
+    #btnCopiar{
+        position: absolute;
+        top: 250%;
+        left: -1%;
+        width: 100%;
+        height: 45%;
+        padding: 1.01em;
+    }
+}
