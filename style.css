@@ -128,7 +128,7 @@ body{
     }
     .rectangle{
         position: absolute;
-        top: 95%;
+        top: 98%;
         width: 90%;
         max-width: none;
         height: 20%;
@@ -173,7 +173,7 @@ body{
     }
     #btnCopiar{
         position: absolute;
-        top: 570%;
+        top: 430%;
         left: 2%;
         width: 90%;
     }
@@ -189,7 +189,7 @@ body{
     }
     .rectangle{
         position: absolute;
-        top: 95%;
+        top: 98%;
         height: 20%;
         left: 50%;
 
@@ -229,9 +229,9 @@ body{
     }
     #btnCopiar{
         position: absolute;
-        top: 250%;
-        left: -1%;
-        width: 100%;
+        top: 290%;
+        left: 4%;
+        width: 92%;
         height: 45%;
         padding: 1.01em;
     }
